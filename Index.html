@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ifeoluwa Olaoye | Web Developer</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #081326;
+  color: white;
+  line-height: 1.7;
+}
+
+header {
+  background: #101f38;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #1685ff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #55d6ff;
+}
+
+section {
+  padding: 65px 8%;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle at top right, #123c77, #081326 65%);
+}
+
+.hero h1 {
+  font-size: clamp(36px, 7vw, 58px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.blue {
+  color: #1685ff;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #bdc9db;
+}
+
+.btn {
+  display: inline-block;
+  background: #1685ff;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 7px 5px 7px 0;
+}
+
+.btn:hover {
+  background: #0068d9;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.light {
+  background: #f4f7fc;
+  color: #15233a;
+}
+
+.about-text {
+  max-width: 750px;
+  color: #536179;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  background: #142744;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #263e5f;
+}
+
+.skill h3 {
+  color: #55d6ff;
+  margin-bottom: 8px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  color: #15233a;
+  padding: 23px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px #00000010;
+}
+
+.project h3 {
+  color: #0878ed;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #536179;
+}
+
+.contact-text {
+  color: #bdc9db;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details p {
+  color: #bdc9db;
+  overflow-wrap: anywhere;
+}
+
+.contact-details a:not(.btn) {
+  color: #55d6ff;
+  text-decoration: none;
+}
+
+.contact-details a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #050c18;
+  padding: 25px 8%;
+  text-align: center;
+  color: #bdc9db;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 18px;
+  z-index: 20;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 17px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px #0005;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 50px 6%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">IO.</div>
+
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <p class="blue">WELCOME TO MY PORTFOLIO</p>
+
+  <h1>
+    Hi, I'm<br>
+    <span class="blue">Ifeoluwa Olaoye</span>
+  </h1>
+
+  <h2>Web Developer &amp; Programmer</h2>
+
+  <p>
+    I build modern, responsive websites and enjoy turning
+    creative ideas into digital experiences. I'm passionate
+    about coding, programming, and learning new technologies.
+  </p>
+
+  <div>
+    <a href="#projects" class="btn">View My Projects</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</section>
+
+<section class="light" id="about">
+  <h2 class="section-title">
+    About <span class="blue">Me</span>
+  </h2>
+
+  <div class="about-text">
+    <p>
+      My name is Ifeoluwa Olaoye. I'm interested in web
+      development and programming. I enjoy learning how
+      websites work and building useful digital products.
+    </p>
+
+    <p>
+      My goal is to become a skilled developer, create
+      websites for businesses and individuals, and use
+      technology to solve real problems.
+    </p>
+
+    <strong>My motto: Code. Build. Create. Grow.</strong>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">
+    My <span class="blue">Skills</span>
+  </h2>
+
+  <p>Technologies I'm learning and developing:</p>
+
+  <div class="skills">
+    <div class="skill">
+      <h3>HTML</h3>
+      <p>Website structure</p>
+    </div>
+
+    <div class="skill">
+      <h3>CSS</h3>
+      <p>Web design</p>
+    </div>
+
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <p>Interactive websites</p>
+    </div>
+
+    <div class="skill">
+      <h3>Responsive Design</h3>
+      <p>Mobile-friendly pages</p>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="projects">
+  <h2 class="section-title">
+    My <span class="blue">Projects</span>
+  </h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <h3>Business Website</h3>
+      <p>
+        A sample website concept for a business to showcase
+        its services and contact information.
+      </p>
+      <a href="#contact" class="btn">Discuss a Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>
+        A website that introduces a person, displays their
+        skills, and presents their work.
+      </p>
+      <a href="#contact" class="btn">Discuss a Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Product Landing Page</h3>
+      <p>
+        A sample page for promoting a product or service
+        online.
+      </p>
+      <a href="#contact" class="btn">Discuss a Project</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">
+    Contact <span class="blue">Me</span>
+  </h2>
+
+  <p class="contact-text">
+    Have a project idea or want to work together?
+    Contact me by email or WhatsApp.
+  </p>
+
+  <div class="contact-details">
+
+    <p>
+      📧 <strong>Email:</strong><br>
+      <a href="mailto:ifeoluwajoseph968@gmail.com">
+        ifeoluwajoseph968@gmail.com
+      </a>
+    </p>
+
+    <p>
+      📱 <strong>WhatsApp:</strong><br>
+      <a href="https://wa.me/2348064796000"
+         target="_blank"
+         rel="noopener noreferrer">
+        +234 806 479 6000
+      </a>
+    </p>
+
+    <a class="btn"
+       href="mailto:ifeoluwajoseph968@gmail.com?subject=Website%20Project">
+      Send Me an Email
+    </a>
+
+    <a class="btn"
+       href="https://wa.me/2348064796000?text=Hello%20Ifeoluwa%2C%20I%20visited%20your%20portfolio%20website."
+       target="_blank"
+       rel="noopener noreferrer">
+      Message Me on WhatsApp
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>
+    &copy; <span id="year"></span> Ifeoluwa Olaoye.
+    All rights reserved.
+  </p>
+
+  <p>Code. Build. Create. Grow.</p>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/2348064796000?text=Hello%20Ifeoluwa"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with me on WhatsApp">
+  WhatsApp Chat
+</a>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
